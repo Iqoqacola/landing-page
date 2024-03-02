@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$primary: #f25576;
+$secondary: #526688;
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-image: url("../img/bg-image.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 56vw;
+    color: $primary;
+}
+
+.navbar {
+    margin-top: 25px;
+    .container-fluid {
+        #navbarNav {
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    a {
+                        color: $primary;
+                        font-family: "Lato", sans-serif;
+                        font-size: 1.2em;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    .container {
+        div {
+            width: 50%;
+            margin-top: 15%;
+            padding-left: 50px;
+            h1 {
+                color: $primary;
+                font-family: "Lato", sans-serif;
+                font-size: 6em;
+                font-weight: 800;
+                letter-spacing: 2px;
+            }
+            p {
+                color: $secondary;
+                font-family: "Lato", sans-serif;
+                font-size: 1em;
+            }
+            button {
+                background-color: $primary;
+                width: 150px;
+                height: 50px;
+                border-radius: 100px;
+                font-family: "Lato", sans-serif;
+                font-size: 1.5em;
+                font-weight: 600;
+                color: white;
+                border: $primary;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.license {
+    margin-top: 35px;
+    a {
+        display: flex;
+        justify-content: center;
+        color: $primary;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 992px) {
+    #navbarNav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 20px;
+    }
+}
